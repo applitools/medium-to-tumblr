@@ -31,7 +31,6 @@
   },
   "dependencies": {
     "debug": "^3.1.0",
-    "jquery-lite": "^2.2.3",
     "jquery-slim": "^3.0.0",
     "jsdom": "^11.3.0",
     "yargs": "^10.0.3"
