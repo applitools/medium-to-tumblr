@@ -1,0 +1,44 @@
+{
+  "name": "@applitools/medium-to-tumblr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/medium-to-tumblr.js",
+  "files": [
+    "src",
+    "scripts"
+  ],
+  "bin": {
+    "medium-to-tumblr": "scripts/run-medium-to-tumblr.js"
+  },
+  "scripts": {
+    "test": "mocha --no-timeouts 'test/**/*.test.js' && npm run eslint",
+    "eslint": "eslint '**/*.js'",
+    "start": "script/run-template-template.js",
+    "prepublishOnly": "npm version patch",
+    "publish:all": "npm publish --access=private"
+  },
+  "keywords": [
+    "applitools",
+    "utility",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Gil Tayar <gil.tayar@applitools.com>",
+  "license": "UNLICENSED",
+  "repository": {
+    "url": "https://github.com/applitools/rendering-grid",
+    "type": "git"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.2.0",
+    "eslint-plugin-mocha-no-only": "0.0.5",
+    "eslint-plugin-prettier": "^2.1.2",
+    "mocha": "^4.0.1",
+    "prettier": "^1.5.2"
+  }
+}

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: applitools/medium-to-tumblr
+    ports:
+      - 80
+    environment:
+      # Configuration
