@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Not Only Cars: The Six Levels of Autonomous Testing</title>
+  <meta name="description" content="There is something similar about driving and testing. While testing is an exercise in creativity, parts of it are boring — just like…">
+  <style>
+    * {
+      font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 17px;
+      color: #333;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 30px 0 0 0;
+      margin-bottom: 18px;
+      margin-top: 33px;
+      color: #333;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin: 10px 0 20px 0;
+      color: #333;
+    }
+
+    header {
+      width: 640px;
+      margin: auto;
+    }
+
+    section {
+      width: 640px;
+      margin: auto;
+    }
+
+    section p {
+      margin-bottom: 27px;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    section img {
+      max-width: 640px;
+    }
+
+    footer {
+      padding: 0 20px;
+      margin: 50px 0;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .aspectRatioPlaceholder {
+      max-width: auto !important;
+      max-height: auto !important;
+    }
+
+    .aspectRatioPlaceholder-fill {
+      padding-bottom: 0 !important;
+    }
+
+    header,
+    section[data-field=subtitle] {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <article class="h-entry">
+    <header>
+      <h1 class="p-name">Not Only Cars: The Six Levels of Autonomous Testing</h1>
+    </header>
+    <section data-field="subtitle" class="p-summary">
+      There is something similar about driving and testing. While testing is an exercise in creativity, parts of it are boring
+      — just like…
+    </section>
+    <section data-field="body" class="e-content">
+      <section name="1091" class="section section--body section--first section--last">
+        <div class="section-divider">
+          <hr class="section-divider">
+        </div>
+        <div class="section-content">
+          <div class="section-inner sectionLayout--insetColumn">
+            <h3 name="9e90" id="9e90" class="graf graf--h3 graf--leading graf--title">Not Only Cars: The Six Levels of Autonomous Testing</h3>
+            <figure name="4e0f" id="4e0f" class="graf graf--figure graf-after--h3">
+              <div class="aspectRatioPlaceholder is-locked" style="max-width: 610px; max-height: 250px;">
+                <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 41%;"></div>
+                <img class="graf-image" data-image-id="1*fmj_CuHpuCby28XZXfyy_A.png" data-width="610" data-height="250"
+                  src="https://cdn-images-1.medium.com/max/800/1*fmj_CuHpuCby28XZXfyy_A.png">
+              </div>
+            </figure>
+            <p name="a2ed" id="a2ed" class="graf graf--p graf-after--figure">There is something similar about driving and testing. While testing is an exercise in creativity, parts of it
+              <em class="markup--em markup--p-em">are</em> boring — just like driving is. Regression testing is tedious in that you need to do the same tests
+              over and over again, every time a release is created, just like your daily commute. And just like during your
+              daily commute, doing something repetitively is a recipe for mistakes, so repetitive testing, just like driving,
+              is a
+              <em class="markup--em markup--p-em">dangerous </em>activity, as can be seen from the various crash sites strewn over our commute highways. Or by
+              the various bugs that slipped from us during our regression testing.</p>
+            <p name="446d" id="446d" class="graf graf--p graf-after--p">Which is why we automate testing. We write code that runs our tests, and run them whenever we want. But even
+              <em class="markup--em markup--p-em">that</em> gets repetitive. Another day, another form field to check. Another form, another page. And one gets
+              the feeling that writing those tests is a repetitive process. That it too can be automated.</p>
+            <p name="5011"
+              id="5011" class="graf graf--p graf-after--p">Can AI automate this process? Can we make some, or all parts of our testing, and writing our tests, autonomous ?
+              Can AI do to writing tests what it is doing to driving?</p>
+            <p name="cd7a" id="cd7a" class="graf graf--p graf-after--p">(This post is cross-posted from
+              <a href="http://testautomation.applitools.com/" data-href="http://testautomation.applitools.com/"
+                class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Applitool’s blog</a>)</p>
+            <h3 name="5c20" id="5c20" class="graf graf--h3 graf-after--p">Autonomous Driving</h3>
+            <p name="5700" id="5700" class="graf graf--p graf-after--h3">On the first day of May, 2012, in Las Vegas,
+              <a href="https://spectrum.ieee.org/transportation/advanced-cars/how-googles-autonomous-car-passed-the-first-us-state-selfdriving-test"
+                data-href="https://spectrum.ieee.org/transportation/advanced-cars/how-googles-autonomous-car-passed-the-first-us-state-selfdriving-test"
+                class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Google passed Nevada’s Self-driving test</a>. This can be thought of as the firing shot in an all-out war for
+              domination over what appears to be the future of automobiles, a war that includes hi-tech giants such as Google,
+              Apple, and Intel, but also automotive giants like Ford, Mercedes, and Volvo.</p>
+            <figure name="83c1" id="83c1"
+              class="graf graf--figure graf-after--p">
+              <div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 501px;">
+                <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 71.6%;"></div>
+                <img class="graf-image" data-image-id="1*JIzSkMGSXS-vUDxtNEcNeQ.png" data-width="930" data-height="666"
+                  src="https://cdn-images-1.medium.com/max/800/1*JIzSkMGSXS-vUDxtNEcNeQ.png">
+              </div>
+              <figcaption class="imageCaption">Credit: Google</figcaption>
+            </figure>
+            <p name="65ee" id="65ee" class="graf graf--p graf-after--figure">What’s the big deal? Why is everybody in a panic to be a player in this market? Why are self-driving cars such
+              a big deal? Why are they perceived to be the future of cars? Because everybody “knows” that long-term, nobody
+              is going to be driving their own cars. Because, as we said, driving is a boring activity. Everybody would rather
+              teleport to the office than spend an hour driving there. And if teleporting is not an option (
+              <a href="https://www.theguardian.com/science/2017/jul/12/scotty-can-you-beam-me-up-scientists-teleport-photons-300-miles-into-space"
+                data-href="https://www.theguardian.com/science/2017/jul/12/scotty-can-you-beam-me-up-scientists-teleport-photons-300-miles-into-space"
+                class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">yet</a>!), then a driver that drives you there is almost as good an option. While they are driving, you can
+              get work done, catch up with friends, or take a nap. And if the boredom is taken out of the equation, the accidents
+              that come with it are taken out too.</p>
+            <p name="d1f3" id="d1f3" class="graf graf--p graf-after--p">Because of consumer appeal, the possibility of saving billions in insurance money, and because of the possibility
+              that self-driving cars will solve the present traffic jams, car manufacturers and hi-tech companies are scrambling
+              to implement this technology.</p>
+            <p name="5f46" id="5f46" class="graf graf--p graf-after--p">But what exactly defines a self-driving autonomous car? Is every autonomous car like another? How is Tesla’s
+              driving-assistance similar to Volkswagen’s automatic braking system? And how are they related to Google’s
+              <a
+                href="https://en.wikipedia.org/wiki/Waymo#/media/File:Waymo_self-driving_car_front_view.gk.jpg" data-href="https://en.wikipedia.org/wiki/Waymo#/media/File:Waymo_self-driving_car_front_view.gk.jpg"
+                class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">cute self-driving</a> car that doesn’t even have a steering wheel? To this end, in 2014, SAE International
+                published a
+                <a href="https://en.wikipedia.org/wiki/Autonomous_car#Classification" data-href="https://en.wikipedia.org/wiki/Autonomous_car#Classification"
+                  class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">classification system for autonomous cars</a>, a classification that was adopted by the National Highway
+                Traffic Safety Administration (NHTSA), and is the standard by which all autonomous cars are classified.</p>
+            <h3
+              name="f9a1" id="f9a1" class="graf graf--h3 graf-after--p">Levels of Driving Automation</h3>
+              <figure name="965c" id="965c" class="graf graf--figure graf-after--h3">
+                <div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 422px;">
+                  <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 60.199999999999996%;"></div>
+                  <img class="graf-image" data-image-id="1*RuMj2NQjRJ673rQxSPoY_A.jpeg" data-width="830" data-height="500"
+                    src="https://cdn-images-1.medium.com/max/800/1*RuMj2NQjRJ673rQxSPoY_A.jpeg">
+                </div>
+                <figcaption class="imageCaption">Credit: Applitools</figcaption>
+              </figure>
+              <p name="b9c0" id="b9c0" class="graf graf--p graf-after--figure">The classification adopts six levels of driving automation, and a car is classified for a level depending on
+                the amount of autonomy it exhibits.</p>
+              <p name="15ee" id="15ee" class="graf graf--p graf-after--p">The first level of driving automation is Level 0 — no automation whatsoever. Congratulations! You are already
+                the proud owner of an autonomous car, Level 0.</p>
+              <p name="2f63" id="2f63" class="graf graf--p graf-after--p">Level 1 is where we are today, in some cars on the road. It is named “Driving Assistance”, and is where things
+                like the modern Cruise Control and automatic braking systems are today. In this mode, the human is still
+                under control — the AI is only assisting while the human is driving.</p>
+              <p name="65ae" id="65ae" class="graf graf--p graf-after--p">Level 2 is “Partial Automation”. This is the level Tesla’s Autopilot and GM’s Super Cruise reside in. In this
+                level, the human is still in charge, but the AI takes care of the boring details of acceleration/deceleration
+                and steering, while assuming that the human can take over on the first problem. We’re talking mostly highways
+                here, and not city driving.</p>
+              <p name="4afb" id="4afb" class="graf graf--p graf-after--p">Level 3 is “Conditional Automation”. This is the first level where the car drives itself. But only under certain
+                conditions, and always under the assumption that the human can take over when the AI notifies it that it
+                is incapable of responding to a certain situation.</p>
+              <p name="40b0" id="40b0" class="graf graf--p graf-after--p">Level 4 is “High Automation”. In this level, the AI totally takes over all driving, and does not assume that
+                the human can take over. In other words, this car can drive without a steering wheel. Google’s cars are at
+                this level. The caveat is that there are times and places that the car cannot be autonomous, like in a snow
+                storm, or during fog.</p>
+              <p name="07c3" id="07c3" class="graf graf--p graf-after--p">Level 5 is the highest level — “Full Automation”. The car can be autonomous anytime and anywhere. We have yet
+                to reach that level of automation, but we’re getting there.</p>
+              <p name="c6ca" id="c6ca" class="graf graf--p graf-after--p">Level 6 is “SkyNet Automation”. No human is even in the car, because the robots have killed all of them! (Just
+                joking — this level doesn’t really exist.)</p>
+              <h3 name="4932" id="4932" class="graf graf--h3 graf-after--p">Autonomous Testing</h3>
+              <p name="3685" id="3685" class="graf graf--p graf-after--h3">So back to autonomous testing. My company, Applitools, has just hired a new guy, an addition to our algorithm
+                and AI team. During lunch, we started talking about the similarities between driving and testing, and just
+                brainstorming this idea of “levels of autonomous testing”. These are our thoughts on this.</p>
+              <p name="3e1f"
+                id="3e1f" class="graf graf--p graf-after--p">But
+                <a href="https://en.wikipedia.org/wiki/Caveat_emptor" data-href="https://en.wikipedia.org/wiki/Caveat_emptor"
+                  class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Caveat Emptor</a>! There is a
+                <a href="http://tenminutesoftalmud.blogspot.co.il/2015/10/are-we-prophets-baba-batra-12b-part-2-9.html"
+                  data-href="http://tenminutesoftalmud.blogspot.co.il/2015/10/are-we-prophets-baba-batra-12b-part-2-9.html"
+                  class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">saying in Hebrew</a> that since the destruction of the (second) temple, prophecy is only given to fools and
+                children. So please take these levels with a grain of salt. On the other hand, while these thoughts reflect
+                our fantasies, they also reflect where we think the testing world is going in terms of using AI.</p>
+              <p name="5e4f"
+                id="5e4f" class="graf graf--p graf-after--p">So fasten your seat belts, we’re going on a ride through the 6 levels of autonomous testing</p>
+              <figure name="b946"
+                id="b946" class="graf graf--figure graf-after--p">
+                <div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 454px;">
+                  <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 64.8%;"></div>
+                  <img class="graf-image" data-image-id="1*BsH3mAinBwSdMkkEfVOYgw.jpeg" data-width="830" data-height="538"
+                    data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*BsH3mAinBwSdMkkEfVOYgw.jpeg">
+                </div>
+                <figcaption class="imageCaption">The Six Levels of Testing Autonomy (Credit: Applitools)</figcaption>
+              </figure>
+              <h3 name="8eba" id="8eba" class="graf graf--h3 graf-after--figure">Level 0 — “No Autonomy”</h3>
+              <p name="3078" id="3078" class="graf graf--p graf-after--h3">Congratulations! You’re there. You write code that tests the application, and you’re very happy because you
+                can run the tests again and again on every release, instead of boringly repeating the same tests again and
+                again. This is perfect, because now you can concentrate on the
+                <em class="markup--em markup--p-em">important </em>aspects of testing:</p>
+              <figure name="3c5e" id="3c5e" class="graf graf--figure graf--iframe graf-after--p">
+                <blockquote class="twitter-tweet">
+                  <a href="https://twitter.com/daiyitastic/status/911541611494068224"></a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </figure>
+              <p name="4748" id="4748" class="graf graf--p graf-after--figure">But nobody’s helping you write that automation code. And writing the code itself is repetitive. Any field added
+                to a form means adding a test. Any form added to a page means adding a test that checks all the fields. And
+                any page added means checking all the components and forms in that page.</p>
+              <p name="981a" id="981a" class="graf graf--p graf-after--p">Moreover, the more tests you have, the more they fail when there is a sweeping change in the application. Each
+                and every failed test needs to be checked to verify whether this is a
+                <em class="markup--em markup--p-em">real</em> bug, or just a new baseline.</p>
+              <h3 name="a719" id="a719" class="graf graf--h3 graf-after--p">Level 1 — “Drive Assistance”</h3>
+              <p name="93a5" id="93a5" class="graf graf--p graf-after--h3">An interesting thing we saw when we researched autonomous driving, is that
+                <a href="https://seekingalpha.com/article/4087480-audi-beats-tesla-gm-level-3-autonomy"
+                  data-href="https://seekingalpha.com/article/4087480-audi-beats-tesla-gm-level-3-autonomy" class="markup--anchor markup--p-anchor"
+                  rel="noopener" target="_blank">the better the vision system of the autonomous car, the better its autonomy is</a>. This is why we believe
+                the better the AI can
+                <em class="markup--em markup--p-em">see</em> the app, the more autonomous it can be. This means that it should be able to see not only a snapshot
+                of the DOM of the page, but also a visual picture of the page.</p>
+              <p name="60f7" id="60f7" class="graf graf--p graf-after--p">Once the testing framework can
+                <em class="markup--em markup--p-em">see </em>the page, and look at it holistically, whether through the DOM or through a screenshot, it can help
+                you write those checks that you write manually.</p>
+              <p name="d688" id="d688" class="graf graf--p graf-after--p">If we take a screenshot of the page, we can holistically check all form fields and texts in the page in one
+                fell swoop. Instead of writing code that checks each and every field, we can test all of them at once against
+                the baseline of the previous test.</p>
+              <figure name="5fb9" id="5fb9" class="graf graf--figure graf-after--p">
+                <div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 369px;">
+                  <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 52.7%;"></div>
+                  <img class="graf-image" data-image-id="1*ga1jhcJa71pVirK9zicGXw.png" data-width="854" data-height="450"
+                    src="https://cdn-images-1.medium.com/max/800/1*ga1jhcJa71pVirK9zicGXw.png">
+                </div>
+                <figcaption class="imageCaption">Checking a whole page in one fell swoop. Credit: Applitools</figcaption>
+              </figure>
+              <p name="6462" id="6462" class="graf graf--p graf-after--figure">This level exists today in testing tools like
+                <a href="https://www.applitools.com?utm_source=SOF&amp;utm_medium=GT"
+                  data-href="https://www.applitools.com?utm_source=SOF&amp;utm_medium=GT" class="markup--anchor markup--p-anchor"
+                  rel="noopener" target="_blank">Applitools Eyes</a>. Previous tools that tried to do this failed because comparing images pixel by pixel
+                never works. For it to work, the tool needs AI algorithms to figure out what changes are not really changes
+                and which ones are real.</p>
+              <p name="ecf8" id="ecf8" class="graf graf--p graf-after--p">This is how AI
+                <strong class="markup--strong markup--p-strong">today</strong> assists you in writing your test code, by writing all your checks for you. The human is still
+                driving the tests, but the some of the checks are done automatically by the AI.</p>
+              <p name="b9a3" id="b9a3"
+                class="graf graf--p graf-after--p">Also, the AI can check that a test passes, but when it fails it still needs to notify the human to check whether
+                the failure is a real one, or happened because of a correct change in the software. The human will then have
+                to confirm that the change is good, or reject it because it’s a bug.</p>
+              <p name="2ebc" id="2ebc" class="graf graf--p graf-after--p">And having the AI “see” the application means that the AI can check the
+                <em class="markup--em markup--p-em">visual</em> aspects of an application against a baseline. This is something that until now could
+                <em class="markup--em markup--p-em">only</em> be covered by manual testing.</p>
+              <p name="d09e" id="d09e" class="graf graf--p graf-after--p">But the human still needs to assert every change.</p>
+              <h3 name="5187" id="5187" class="graf graf--h3 graf-after--p">Level 2 — “Partial Automation”</h3>
+              <p name="6f54" id="6f54" class="graf graf--p graf-after--h3">With Level 1 autonomy, the tester can pass on the tedious aspect of writing the checks for all the fields on
+                a page onto the AI by having the AI test against a baseline. And the AI can now test the visual aspects of
+                the page.</p>
+              <p name="6784" id="6784" class="graf graf--p graf-after--p">But checking each and every test failure to verify whether it’s a “good” failure or a real bug can be tedious,
+                especially if one change is reflected in many test failures. A Level 2 AI will assist the human in checking
+                changes against the baseline and will turn what used to be a tedious effort into a simple one.</p>
+              <p name="6710"
+                id="6710" class="graf graf--p graf-after--p">A Level 2 AI will look at the combination of DOM and screenshot to understand which parts of a page are dynamic
+                and change based on data in the database or in external services, and which are static and are meant to be
+                visual. Both of these aspects of a page, the dynamic and the static, need to be tested, but they need to
+                be tested
+                <em class="markup--em markup--p-em">differently</em> — the dynamic aspects are driven by the business logic, and the static pages are driven
+                by the visual design.</p>
+              <p name="188d" id="188d" class="graf graf--p graf-after--p">If the AI can look at lots of snapshots of the same page, it can start to understand which parts of the page
+                are dynamic, and which are static and treat them separately. The static parts can and should be understood
+                visually, while the dynamic parts mostly need to be checked in terms of data.</p>
+              <p name="3fca" id="3fca"
+                class="graf graf--p graf-after--p">Once the AI can differentiate between the two, the alarms that it gives the human will not be just “this page
+                has changed”, but “this data in the page should be the same, but isn’t”, versus “the page’s look has changed”.
+                This will enable the human to check software changes more quickly.</p>
+              <p name="3afc" id="3afc" class="graf graf--p graf-after--p">Moreover, because it has lots of snapshots of lots of pages, a Level 2 AI will be able to group lots of changes
+                in lots of pages, changes that happened due to a correct software change, and tell the human that these are
+                the “same” change, and would they like to please confirm or reject all these changes as a group.</p>
+              <figure
+                name="2fe3" id="2fe3" class="graf graf--figure graf-after--p">
+                <div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 359px;">
+                  <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 51.300000000000004%;"></div>
+                  <img class="graf-image" data-image-id="1*BQiFlAMmvYIs2T8Q4hYM4Q.png" data-width="1600" data-height="820"
+                    src="https://cdn-images-1.medium.com/max/800/1*BQiFlAMmvYIs2T8Q4hYM4Q.png">
+                </div>
+                <figcaption class="imageCaption">Grouping similar changes in Applitools Eyes. Credit: Applitools</figcaption>
+                </figure>
+                <h3 name="6cf3" id="6cf3" class="graf graf--h3 graf-after--figure">Level 3 — “Conditional Automation”</h3>
+                <p name="b7e4" id="b7e4" class="graf graf--p graf-after--h3">In Level 2, any failure or change detected in the software still needs to be vetted by a human. A Level 2
+                  AI can help analyzing the change, but cannot understand whether a baseline is correct or not just by looking
+                  at the baseline. But a Level 3 AI can do that and much more, because it can apply machine learning techniques
+                  to both the data aspects of a page, and the visual aspects of a page.</p>
+                <figure name="06d6" id="06d6"
+                  class="graf graf--figure graf--layoutOutsetLeft graf-after--p">
+                  <div class="aspectRatioPlaceholder is-locked" style="max-width: 202px; max-height: 202px;">
+                    <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 100%;"></div>
+                    <img class="graf-image" data-image-id="1*_f7sIcblx6Sj4HKPvsZCLQ.png" data-width="202" data-height="202"
+                      src="https://cdn-images-1.medium.com/max/600/1*_f7sIcblx6Sj4HKPvsZCLQ.png">
+                  </div>
+                  <figcaption class="imageCaption">A Level 3 AI will autonomously flag this as a bug</figcaption>
+                </figure>
+                <p name="3265" id="3265" class="graf graf--p graf-after--figure">For example, a Level 3 AI can look at the visual aspects of a page and figure out whether the design is off,
+                  based on standard rules for design, rules like alignment rules, whitespace use, color and font usage, and
+                  layout rules.</p>
+                <p name="dd25" id="dd25" class="graf graf--p graf-after--p">And what about the data aspects? A Level 3 AI will also be able to look at the data and figure out that all
+                  the numbers up to now, in this field or that, need to be between a specific range, and that this field
+                  is an email, and this one needs to be the sum of these fields above it. It can figure out that in this
+                  page,
+                  <em class="markup--em markup--p-em">this</em> table needs to be sorted by
+                  <em class="markup--em markup--p-em">this </em>column.</p>
+                <p name="4919" id="4919" class="graf graf--p graf-after--p">So even if there was a change in the page, the AI can still understand that this page is OK, and not submit
+                  it to a human to vet. And because that AI is looking at hundreds of test results, and seeing how things
+                  change
+                  <em class="markup--em markup--p-em">over time</em>, it can apply machine learning techniques to detect
+                  <em class="markup--em markup--p-em">anomalies</em> in the changes, and only submit a test to a human to verify if such an anomaly is detected.</p>
+                <h3
+                  name="6f3f" id="6f3f" class="graf graf--h3 graf-after--p">Level 4 — “High Automation”</h3>
+                  <p name="c57d" id="c57d" class="graf graf--p graf-after--h3">Up to now, all the AI did was run the
+                    <em class="markup--em markup--p-em">checks</em> automatically. The human is still driving the test, and clicking on the links (albeit using
+                    automation software). Level 4 is where the AI is driving the test itself!</p>
+                  <p name="b28b" id="b28b"
+                    class="graf graf--p graf-after--p">The Level 4 AI will be able to understand some pages, by understanding what type of page it is. It will
+                    understand that this page is a login page, this one is a profile page, and that one is a registration
+                    page, or a shopping cart page. Once the AI understands the type of page, using techniques like reinforcement
+                    learning, it can start driving the tests on it automatically, without human intervention.</p>
+                  <p name="b33a"
+                    id="b33a" class="graf graf--p graf-after--p">But a Level 4 AI will be able to drive tests even on pages that it doesn’t understand, by looking at user
+                    interactions over time, understanding them, and driving tests through this understanding.</p>
+                  <h3 name="fc81"
+                    id="fc81" class="graf graf--h3 graf-after--p">Level 5 — “Full Automation”</h3>
+                  <p name="8f8f" id="8f8f" class="graf graf--p graf-after--h3">This one’s really Scifi, and we’re starting to fly on wings of fantasy. So fly with me: at this level,
+                    the AI will be able to converse with the product manager, understand the application, and fully drive
+                    the tests itself!</p>
+                  <p name="91cd" id="91cd" class="graf graf--p graf-after--p">Unfortunately, given that no human tester is capable of talking to a product manager to understand the
+                    application, AI-s will need to be much smarter than humans to reach this level! 😀</p>
+                  <h3 name="e482"
+                    id="e482" class="graf graf--h3 graf-after--p">Level 6 — “Skynet Automation”</h3>
+                  <p name="5439" id="5439" class="graf graf--p graf-after--h3">At this level, due to the Robot Apocalypse, no humans are left alive, so there’s nothing to test, is there?
+                    Then again, who’s testing the robot software? Hm…</p>
+                  <h3 name="ddf4" id="ddf4" class="graf graf--h3 graf-after--p">Are We There Yet?</h3>
+                  <figure name="cb23" id="cb23" class="graf graf--figure graf-after--h3">
+                    <div class="aspectRatioPlaceholder is-locked" style="max-width: 400px; max-height: 400px;">
+                      <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 100%;"></div>
+                      <img class="graf-image" data-image-id="1*QS7FzTOhLz_KRp5qHBm3kw.png" data-width="400" data-height="400"
+                        src="https://cdn-images-1.medium.com/max/800/1*QS7FzTOhLz_KRp5qHBm3kw.png">
+                    </div>
+                  </figure>
+                  <p name="9f5c" id="9f5c" class="graf graf--p graf-after--figure">Are we there yet? Do we have to start looking for a job because computers are going to automate all software
+                    testing?</p>
+                  <p name="3346" id="3346" class="graf graf--p graf-after--p">Most emphatically, no! Software Testing is similar to driving in some aspects, but in other aspects it
+                    is much more complicated, as it entails understanding complex human interactions. An AI today doesn’t
+                    <em class="markup--em markup--p-em">really</em> understand what it’s doing. It’s just automating tasks based on lots and lots of historical
+                    data.</p>
+                  <p name="6a4c" id="6a4c" class="graf graf--p graf-after--p">Where are we now in terms of using AI? Advanced tools like
+                    <a href="https://www.applitools.com?utm_source=SOF&amp;utm_medium=GT"
+                      data-href="https://www.applitools.com?utm_source=SOF&amp;utm_medium=GT" class="markup--anchor markup--p-anchor"
+                      rel="noopener" target="_blank">Applitools Eyes</a> are currently at level 1, and progressing nicely in Level 2 functionality. While
+                    companies are working on level 2, a level 3 AI will need a lot more work and research (but is definitely
+                    doable). A level 4 AI is very far away in the future. This is good news — in the next decade or so, we
+                    will be able to enjoy the
+                    <em class="markup--em markup--p-em">fruits</em> of AI-assisted testing, without the nasty side-effects.</p>
+                  <p name="2d3e" id="2d3e" class="graf graf--p graf-after--p graf--trailing">But
+                    <em class="markup--em markup--p-em">will</em> we one day, in the far far future, be out of of a job? Who knows —
+                    <a href="http://tenminutesoftalmud.blogspot.co.il/2015/10/are-we-prophets-baba-batra-12b-part-2-9.html"
+                      data-href="http://tenminutesoftalmud.blogspot.co.il/2015/10/are-we-prophets-baba-batra-12b-part-2-9.html"
+                      class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">since the destruction of the (second) temple, prophecy is only given to fools and children</a>!</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <p class="p-tags">Tagged in
+        <a href="https://medium.com/tag/self-driving-cars" class="p-tag">Self Driving Cars</a>,
+        <a href="https://medium.com/tag/visual-testing" class="p-tag">Visual Testing</a>,
+        <a href="https://medium.com/tag/testing" class="p-tag">Testing</a>
+      </p>
+      <p>By
+        <a href="https://medium.com/@giltayar" class="p-author h-card">Gil Tayar</a> on
+        <a href="https://medium.com/p/a22611ab1d7f">
+          <time class="dt-published" datetime="2017-10-30T07:44:28.173Z">October 30, 2017</time>
+        </a>.</p>
+      <p>
+        <a href="https://medium.com/@giltayar/not-only-cars-the-six-levels-of-autonomous-testing-a22611ab1d7f" class="p-canonical">Canonical link</a>
+      </p>
+      <p>Exported from
+        <a href="https://medium.com">Medium</a> on October 30, 2017.</p>
+    </footer>
+  </article>
+
+</body>
+
+</html>

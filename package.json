@@ -13,7 +13,7 @@
   "scripts": {
     "test": "mocha --no-timeouts 'test/**/*.test.js' && npm run eslint",
     "eslint": "eslint '**/*.js'",
-    "start": "script/run-template-template.js",
+    "start": "scripts/run-medium-to-tumblr.js",
     "prepublishOnly": "npm version patch",
     "publish:all": "npm publish --access=private"
   },
