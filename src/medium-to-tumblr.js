@@ -46,7 +46,6 @@ async function main(argv, {shouldExitOnError = false} = {}) {
 
   if (!options.output) {
     process.stdout.write(translatedHtml)
-    process.stdout.write('\n')
   } else {
     await p(fs.writeFile)(options.output, translatedHtml)
   }

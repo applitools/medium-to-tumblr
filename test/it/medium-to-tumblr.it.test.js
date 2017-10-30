@@ -13,7 +13,7 @@ chai.use(chaiFiles)
 
 const app = require('../..')
 
-describe.only('medium-to-tumblr (it)', function() {
+describe('medium-to-tumblr (it)', function() {
   it('should write default html', async () => {
     const tmpDir = await p(fs.mkdtemp)(os.tmpdir() + '/')
     const outputFile = path.join(tmpDir, 'tumblr-output.html')

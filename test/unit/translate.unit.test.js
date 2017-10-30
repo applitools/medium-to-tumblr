@@ -39,7 +39,7 @@ describe('translate (unit)', function() {
     const input = '<body>x<p>foo</p>y</body>'
     const prefix = '<div>prefix</div>'
     const postfix = '<div>postfix</div>'
-    const expected = '<head></head><body><div>prefix</div>x<p>foo</p>y<div>postfix</div></body>'
+    const expected = '<body><div>prefix</div>x<p>foo</p>y<div>postfix</div></body>'
 
     expect(translate(prefix, postfix, input)).to.equal(expected)
   })
@@ -61,5 +61,5 @@ describe('translate (unit)', function() {
 })
 
 function removePreambles(html) {
-  return html.replace('<head></head><body>', '').replace('</body>', '')
+  return html.replace('<body>', '').replace('</body>', '')
 }
