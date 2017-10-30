@@ -9,9 +9,16 @@ function translate(prefix, postfix, html) {
   const $ = jQuery(window)
 
   $('style').remove()
+  $('head').remove()
   $('figcaption').remove()
   $('*[style]').removeAttr('style')
   $('*[class]').removeAttr('class')
+
+  if ($('h3').length > 0) {
+    $('body')
+      .children()
+      .replaceWith($($('h3')[0]).nextAll())
+  }
 
   prefix && $('body').prepend(prefix)
   postfix && $('body').append(postfix)

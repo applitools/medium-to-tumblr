@@ -43,6 +43,21 @@ describe('translate (unit)', function() {
 
     expect(translate(prefix, postfix, input)).to.equal(expected)
   })
+
+  it('should contain only the siblings after the first h3', () => {
+    const afterH3 = '<div>after<span>h3</span></div><div>some more!<h3>more h3</h3></div>'
+    const input = `
+    <section>
+      <div>sdfsdf</div>
+      <section>
+        <header>
+          <h1>asdfadsf</h1>
+        </header>
+        <h3>H3!</h3>${afterH3}</section>
+    </section>`
+
+    expect(simpleTranslate(input)).to.equal(afterH3)
+  })
 })
 
 function removePreambles(html) {
