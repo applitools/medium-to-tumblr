@@ -9,6 +9,10 @@ describe('translate (unit)', function() {
     const input = '<p>lalala</p><style>bababab</style><p>foo</p>'
     const expected = '<p>lalala</p><p>foo</p>'
 
-    expect(translate(input)).to.equal(expected)
+    expect(removePreambles(translate(input))).to.equal(expected)
   })
 })
+
+function removePreambles(html) {
+  return html.replace('<head></head><body>', '').replace('</body>', '')
+}
