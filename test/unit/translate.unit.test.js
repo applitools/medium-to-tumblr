@@ -33,23 +33,25 @@ describe('translate (unit)', function() {
     expect(removePreambles(translate(input))).to.equal(expected)
   })
 
-  it('should add a style preamble', () => {
+  it('should add a preamble', () => {
     const input = '<p>foo</p>'
     const expectedToInclude1 = '<style>'
-    const expectedToInclude2 = '</style>' + input
+    const expectedToInclude2 = '</style>'
 
-    expect(removePreambles(translate(input), false))
+    expect(removePreambles(translate(input, 'the-utm-content'), false))
       .to.include(expectedToInclude1)
       .and.to.include(expectedToInclude2)
+      .and.to.include('utm_content=the-utm-content')
+      .and.to.include('Gil Tayar')
   })
 })
 
-function removePreambles(html, includingStyle = true) {
+function removePreambles(html, includingPrePostFixes = true) {
   const pre = html.replace('<head></head><body>', '').replace('</body>', '')
 
-  if (!includingStyle) {
+  if (!includingPrePostFixes) {
     return pre
   }
 
-  return pre.replace(/<style>(.|\s)*<\/style>/, '')
+  return pre.replace(/<!-- postfix -->(.|\s)*$/, '')
 }
