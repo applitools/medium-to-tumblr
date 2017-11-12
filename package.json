@@ -1,6 +1,6 @@
 {
   "name": "@applitools/medium-to-tumblr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "src/medium-to-tumblr.js",
   "files": [
