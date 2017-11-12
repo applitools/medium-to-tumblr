@@ -28,9 +28,9 @@ describe('translate (unit)', function() {
     expect(simpleTranslate(input)).to.equal(expected)
   })
 
-  it('should remove all figcaptions', () => {
+  it('should not remove all figcaptions', () => {
     const input = '<figure><img src="asdfasdf"><figcaption>Credit!</figcaption></figure>'
-    const expected = '<figure><img src="asdfasdf"></figure>'
+    const expected = '<figure><img src="asdfasdf"><figcaption>Credit!</figcaption></figure>'
 
     expect(simpleTranslate(input)).to.equal(expected)
   })

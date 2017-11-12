@@ -10,7 +10,6 @@ function translate(prefix, postfix, html) {
 
   $('style').remove()
   $('head').remove()
-  $('figcaption').remove()
   $('*[style]').removeAttr('style')
   $('*[class]').removeAttr('class')
 
